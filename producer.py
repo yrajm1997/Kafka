@@ -11,7 +11,7 @@ producer = KafkaProducer(bootstrap_servers ="localhost:29092")
 
 for i in range (10):
     message = {"message": f"Hello, Kafka! {i}"}
-    producer.send("test", json.dumps(message).encode("utf-8"))
+    producer.send("test", json.dumps(message).encode("utf-8"))         # 'test' is the topic name
     time.sleep(random.randint(1,5))
 
 producer.flush()

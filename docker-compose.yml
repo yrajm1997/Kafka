@@ -1,19 +1,19 @@
-version : '3.7'
-services :
-  zookeeper :
-    image : confluentinc/cp-zookeeper:latest
-    container_name : zookeeper
-    environment :
-      ZOOKEEPER_CLIENT_PORT : 2181
-    ports :
+version: '3.7'
+services:
+  zookeeper:
+    image: confluentinc/cp-zookeeper:latest
+    container_name: zookeeper
+    environment:
+      ZOOKEEPER_CLIENT_PORT: 2181
+    ports:
       - 22181:2181
-  kafka :
-    image : confluentinc/cp-kafka:latest
-    container_name : kafka
-    depends_on :
+  kafka:
+    image: confluentinc/cp-kafka:latest
+    container_name: kafka
+    depends_on:
       - zookeeper
-    ports :
+    ports:
       - 29092:29092
-    environment :
-      KAFKA_ZOOKEEPER_CONNECT : zookeeper:2181
-      KAFKA_ADVERTISED_LISTENERS : PLAINTEXT://localhost:29092
+    environment:
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://localhost:29092

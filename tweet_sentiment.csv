@@ -1,3 +1,6 @@
 tweet_id,tweet,sentiment,sentiment_score
-1,"""Pandya did not played well.""",NEGATIVE,0.9996861219406128
-2,"""Hello""",POSITIVE,0.9994955062866211
+1,Pandya did not played well.,NEGATIVE,1.0
+2,Hello,POSITIVE,0.999
+3,Nice to meet you,POSITIVE,1.0
+4,Well done.,POSITIVE,1.0
+5,Too bad!,NEGATIVE,1.0

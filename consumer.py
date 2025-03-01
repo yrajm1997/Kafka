@@ -24,7 +24,7 @@ for message in consumer:
     sentiment = sentiment_pipeline(message)[0]
     result = {
         "tweet_id": count,
-        "tweet": message,
+        "tweet": message.strip('"'),
         "sentiment": sentiment["label"],
         "sentiment_score": round(sentiment["score"], 3)
     }

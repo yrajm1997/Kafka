@@ -1,2 +1,6 @@
 kafka-python-ng
 six
+numpy
+pandas
+tensorflow
+transformers

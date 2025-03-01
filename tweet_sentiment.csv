@@ -1,0 +1,3 @@
+tweet_id,tweet,sentiment,sentiment_score
+1,"""Pandya did not played well.""",NEGATIVE,0.9996861219406128
+2,"""Hello""",POSITIVE,0.9994955062866211

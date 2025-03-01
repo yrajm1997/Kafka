@@ -6,7 +6,7 @@ from transformers import pipeline
 import os
 
 
-consumer = KafkaConsumer("test", bootstrap_servers ="localhost:9092", auto_offset_reset="earliest")    # 'test' is the topic name
+consumer = KafkaConsumer("twitter-stream", bootstrap_servers ="localhost:9092", auto_offset_reset="earliest")    # 'test' is the topic name
 
 #for message in consumer:
 #   print(message.value.decode("utf-8"))
